@@ -1,7 +1,6 @@
 # IMDb-Sentiment-Analysis-with-BERT
 This project demonstrates how to perform sentiment analysis on IMDb movie reviews using BERT (bert-base-uncased). The dataset is loaded, tokenized, and used to train a BERT model for classifying reviews as positive or negative.
-#Data Preparation
-Here's a shorter version of the dataset section:
+
 
 ---
 

@@ -11,7 +11,7 @@ The IMDb dataset consists of 50,000 reviews, split into 25,000 training and 25,0
 
 ---
 
-##Fine-Tuning
+## Fine-Tuning
 
 The BERT (bert-base-uncased) model is fine-tuned for 2 epochs on the IMDb dataset. We use the AdamW optimizer with weight decay and a learning rate of 1e-5, and adjust the learning rate with get_linear_schedule_with_warmup.
 
@@ -19,7 +19,7 @@ After each epoch, the model is evaluated on the validation set using metrics lik
 
 ---
 
-##Overfitting Handling
+## Overfitting Handling
 
 1. Early Stopping: Training halts if validation loss does not improve for 2 consecutive epochs.
 2. Validation Set: Used to monitor model performance and detect overfitting.

@@ -6,13 +6,13 @@ This project demonstrates how to perform sentiment analysis on IMDb movie review
 
 ## Dataset
 
-The IMDb dataset consists of 50,000 reviews, split into 25,000 training and 25,000 test samples, with an equal number of positive and negative reviews. The training and test sets are from disjoint movie sets to prevent overfitting. Negative reviews are scored ≤4, and positive reviews are scored ≥7. Additionally, 50,000 unlabeled reviews are provided for unsupervised learning. For this project, we use a subset of 10,000 samples.
+The IMDb dataset consists of 50,000 reviews, split into 25,000 training and 25,000 test samples, with an equal number of positive and negative reviews. The training and test sets are from disjoint movie sets to prevent overfitting. Negative reviews are scored ≤4, and positive reviews are scored ≥7. Additionally, 50,000 unlabeled reviews are provided for unsupervised learning. For this project, I use a subset of 10,000 samples.
 
 ---
 
 ## Fine-Tuning
 
-The BERT (bert-base-uncased) model is fine-tuned for 2 epochs on the IMDb dataset. We use the AdamW optimizer with weight decay and a learning rate of 1e-5, and adjust the learning rate with get_linear_schedule_with_warmup.
+The BERT (bert-base-uncased) model is fine-tuned for 2 epochs on the IMDb dataset. I use the AdamW optimizer with weight decay and a learning rate of 1e-5, and adjust the learning rate with get_linear_schedule_with_warmup.
 
 After each epoch, the model is evaluated on the validation set using metrics like loss, accuracy, precision, recall, and F1 score. Training stops early if validation loss does not improve for 2 consecutive epochs. The best model is saved as final_fine_tuned_bert_semantic_model.
 
